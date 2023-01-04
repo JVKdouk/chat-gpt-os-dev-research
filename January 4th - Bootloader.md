@@ -313,9 +313,7 @@ The `stosb` instruction stores the value in the `AL` register at the memory loca
 
 Here is an example of how to use the `rep stosb` instruction to fill a block of memory with the value 0xFF:
 
-Copy code
-
-`; Set the value to be stored in the AL register mov al, 0xFF  ; Set the memory address in the ESI register mov esi, my_array  ; Set the number of bytes to be transferred in the ECX register mov ecx, 1024  ; Fill the block of memory with the value in AL rep stosb`
+```; Set the value to be stored in the AL register mov al, 0xFF  ; Set the memory address in the ESI register mov esi, my_array  ; Set the number of bytes to be transferred in the ECX register mov ecx, 1024  ; Fill the block of memory with the value in AL rep stosb```
 
 This code will fill the first 1024 bytes of the `my_array` with the value 0xFF.
 
