@@ -1,3 +1,11 @@
+## Notes on Scheduler
+
+ChatGPT produced enough information for me to blindly implement scheduling. Prior knowledge was needed regarding preemption, since it did not mention enabling the clock IRQ on x86. It was necessary to ask it if it was necessary and how to do it (to which it replied correctly, stating the necessity of clock). It was not able to provide specific details on the implementation, but gave instructions on how to perform it. To my surprise, it gave me external recommendation on how to implement the scheduler and the clock IRQ.
+
+ChatGPT also did not include the idea of the trap frame (process internal state, such as register state). After asking it for the trap frame, it pointed out correctly that storing the trap frame is a common procedure. While developing a scheduler entirely from the output of ChatGPT is feasible, small details may be missing, so constant communication with it is necessary to uncover implementation details.
+
+---
+
 **Question:** How to write an Operating System Scheduler in Rust?
 
 **Answer:** Here are the high-level steps to write an operating system scheduler in Rust:
