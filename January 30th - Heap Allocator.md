@@ -1,3 +1,11 @@
+## Notes of Heap Allocator
+
+ChatGPT correctly points out to heap allocator designs, which ones XV6 uses, and the correct implementation for a Linked List (*dlmalloc*) Allocator. ChatGPT supreends by even showing how to write an Allocator in Rust using a page allocation system, instead of the common static memory region.
+
+One of the problems of ChatGPT becomes evident when we ask it for external articles on the matter. All of the five articles provided either do not exist, or are not valid anymore. ChatGPT can be a powerful experience in Operating System development, as long as external internet links are not required.
+
+---
+
 **Question:** Give me some heap allocator designs
 
 **Answer:** Here are several heap allocator designs:
